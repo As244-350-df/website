@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nodejs Course - Softkhlome</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .accordion-button::after {
+      transform: scale(1.2);
+    }
+    .example-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-primary navbar-dark pb-3">
+  <div class="container">
+    <a href="#" class="navbar-brand disabled">softkhlome</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="p-5">
+  <div class="container">
+    <h1 class="h1 text-center text-danger">this section is still under development proccess</h1>
+    <h2 class="text-center mb-4">Nodejs Course Concepts</h2>
+    <div class="accordion" id="nodejs-course-accordion">
+      
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item1" aria-expanded="false" aria-controls="nodejs-course-item1">
+              Modules
+            </button>
+          </h2>
+          <div id="nodejs-course-item1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>require('./module')</p>
+              <pre><code>require('./module')</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course1/400/200" alt="Modules" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item2" aria-expanded="false" aria-controls="nodejs-course-item2">
+              npm
+            </button>
+          </h2>
+          <div id="nodejs-course-item2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>npm install express</p>
+              <pre><code>npm install express</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course2/400/200" alt="npm" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item3" aria-expanded="false" aria-controls="nodejs-course-item3">
+              Express.js
+            </button>
+          </h2>
+          <div id="nodejs-course-item3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>app.get('/', ...)</p>
+              <pre><code>app.get('/', ...)</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course3/400/200" alt="Express.js" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item4" aria-expanded="false" aria-controls="nodejs-course-item4">
+              File System
+            </button>
+          </h2>
+          <div id="nodejs-course-item4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>fs.readFile(), fs.writeFile()</p>
+              <pre><code>fs.readFile(), fs.writeFile()</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course4/400/200" alt="File System" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item5" aria-expanded="false" aria-controls="nodejs-course-item5">
+              APIs
+            </button>
+          </h2>
+          <div id="nodejs-course-item5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>app.post(), app.put(), app.delete()</p>
+              <pre><code>app.post(), app.put(), app.delete()</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course5/400/200" alt="APIs" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item6" aria-expanded="false" aria-controls="nodejs-course-item6">
+              Middleware
+            </button>
+          </h2>
+          <div id="nodejs-course-item6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>function (req, res, next) { next(); }</p>
+              <pre><code>function (req, res, next) { next(); }</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course6/400/200" alt="Middleware" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item7" aria-expanded="false" aria-controls="nodejs-course-item7">
+              Routing
+            </button>
+          </h2>
+          <div id="nodejs-course-item7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>app.use('/route', router)</p>
+              <pre><code>app.use('/route', router)</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course7/400/200" alt="Routing" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item8" aria-expanded="false" aria-controls="nodejs-course-item8">
+              Environment Variables
+            </button>
+          </h2>
+          <div id="nodejs-course-item8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>process.env.VARIABLE_NAME</p>
+              <pre><code>process.env.VARIABLE_NAME</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course8/400/200" alt="Environment Variables" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item9" aria-expanded="false" aria-controls="nodejs-course-item9">
+              Error Handling
+            </button>
+          </h2>
+          <div id="nodejs-course-item9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>try { ... } catch(err) { ... }</p>
+              <pre><code>try { ... } catch(err) { ... }</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course9/400/200" alt="Error Handling" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading10">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nodejs-course-item10" aria-expanded="false" aria-controls="nodejs-course-item10">
+              Database Connection
+            </button>
+          </h2>
+          <div id="nodejs-course-item10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#nodejs-course-accordion">
+            <div class="accordion-body">
+              <p>mongoose.connect(uri)</p>
+              <pre><code>mongoose.connect(uri)</code></pre>
+              <img src="https://picsum.photos/seed/nodejs-course10/400/200" alt="Database Connection" class="example-img"/>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-primary text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1 h4">SoftKhlome</p>
+    <p>&copy; 2025 SoftKhlome. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
