@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Css Course - Softkhlome</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .accordion-button::after {
+      transform: scale(1.2);
+    }
+    .example-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-primary navbar-dark pb-3">
+  <div class="container">
+    <a href="#" class="navbar-brand disabled">softkhlome</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="p-5">
+  <div class="container">
+    <h1 class="h1 text-center text-danger">this section is still under development proccess</h1>
+    <h2 class="text-center mb-4">Css Course Concepts</h2>
+    <div class="accordion" id="css-course-accordion">
+      
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item1" aria-expanded="false" aria-controls="css-course-item1">
+              Selectors
+            </button>
+          </h2>
+          <div id="css-course-item1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>.class, #id, element</p>
+              <pre><code>.class, #id, element</code></pre>
+              <img src="https://picsum.photos/seed/css-course1/400/200" alt="Selectors" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item2" aria-expanded="false" aria-controls="css-course-item2">
+              Box Model
+            </button>
+          </h2>
+          <div id="css-course-item2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>margin, border, padding, content</p>
+              <pre><code>margin, border, padding, content</code></pre>
+              <img src="https://picsum.photos/seed/css-course2/400/200" alt="Box Model" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item3" aria-expanded="false" aria-controls="css-course-item3">
+              Flexbox
+            </button>
+          </h2>
+          <div id="css-course-item3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>display: flex</p>
+              <pre><code>display: flex</code></pre>
+              <img src="https://picsum.photos/seed/css-course3/400/200" alt="Flexbox" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item4" aria-expanded="false" aria-controls="css-course-item4">
+              Grid Layout
+            </button>
+          </h2>
+          <div id="css-course-item4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>display: grid</p>
+              <pre><code>display: grid</code></pre>
+              <img src="https://picsum.photos/seed/css-course4/400/200" alt="Grid Layout" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item5" aria-expanded="false" aria-controls="css-course-item5">
+              Media Queries
+            </button>
+          </h2>
+          <div id="css-course-item5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>@media (max-width: 600px) { ... }</p>
+              <pre><code>@media (max-width: 600px) { ... }</code></pre>
+              <img src="https://picsum.photos/seed/css-course5/400/200" alt="Media Queries" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item6" aria-expanded="false" aria-controls="css-course-item6">
+              Positioning
+            </button>
+          </h2>
+          <div id="css-course-item6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>static, relative, absolute, fixed, sticky</p>
+              <pre><code>static, relative, absolute, fixed, sticky</code></pre>
+              <img src="https://picsum.photos/seed/css-course6/400/200" alt="Positioning" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item7" aria-expanded="false" aria-controls="css-course-item7">
+              Z-index
+            </button>
+          </h2>
+          <div id="css-course-item7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>Controls stacking order</p>
+              <pre><code>Controls stacking order</code></pre>
+              <img src="https://picsum.photos/seed/css-course7/400/200" alt="Z-index" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item8" aria-expanded="false" aria-controls="css-course-item8">
+              Pseudo-classes
+            </button>
+          </h2>
+          <div id="css-course-item8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>:hover, :nth-child()</p>
+              <pre><code>:hover, :nth-child()</code></pre>
+              <img src="https://picsum.photos/seed/css-course8/400/200" alt="Pseudo-classes" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item9" aria-expanded="false" aria-controls="css-course-item9">
+              Transitions
+            </button>
+          </h2>
+          <div id="css-course-item9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>transition: all 0.3s ease;</p>
+              <pre><code>transition: all 0.3s ease;</code></pre>
+              <img src="https://picsum.photos/seed/css-course9/400/200" alt="Transitions" class="example-img"/>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading10">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css-course-item10" aria-expanded="false" aria-controls="css-course-item10">
+              Animations
+            </button>
+          </h2>
+          <div id="css-course-item10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#css-course-accordion">
+            <div class="accordion-body">
+              <p>@keyframes slidein { ... }</p>
+              <pre><code>@keyframes slidein { ... }</code></pre>
+              <img src="https://picsum.photos/seed/css-course10/400/200" alt="Animations" class="example-img"/>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-primary text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1 h4">SoftKhlome</p>
+    <p>&copy; 2025 SoftKhlome. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
