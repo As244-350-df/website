@@ -1,0 +1,39 @@
+/*the image view css*/
+*{
+    --background-color: #3d0dce;
+    --text-color: #333;
+}
+.image-view {
+  display:none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw !important;
+  height: 100vh !important;
+  position:fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border: 0px solid red;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.image-view img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius:0.3rem;
+}
+.image-view span {
+  color: var(--text-color);
+  width: auto;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  cursor: pointer;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: center;
+}
