@@ -52,10 +52,16 @@
           </h2>
           <div id="css-course-item1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>.class, #id, element</p>
-              <pre><code>.class, #id, element</code></pre>
-              <img src="https://picsum.photos/seed/css-course1/400/200" alt="Selectors" class="example-img"/>
-            </div>
+<p>CSS selectors are patterns used to select and style HTML elements. They include:</p>
+<ul>
+  <li><strong>Element Selector</strong>: targets all elements of a specific type, e.g., <code>p</code>.</li>
+  <li><strong>Class Selector</strong>: targets elements with a specific class, e.g., <code>.menu</code>.</li>
+  <li><strong>ID Selector</strong>: targets a single element with a specific ID, e.g., <code>#header</code>.</li>
+</ul>
+<pre><code>p { color: blue; }
+.menu { font-size: 18px; }
+#header { background-color: lightgray; }</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -66,10 +72,19 @@
           </h2>
           <div id="css-course-item2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>margin, border, padding, content</p>
-              <pre><code>margin, border, padding, content</code></pre>
-              <img src="https://picsum.photos/seed/css-course2/400/200" alt="Box Model" class="example-img"/>
-            </div>
+<p>The CSS Box Model describes how elements are rendered. Each box consists of:</p>
+<ul>
+  <li><strong>Content</strong>: The actual content of the box, such as text or an image.</li>
+  <li><strong>Padding</strong>: Clears space around the content, inside of the border.</li>
+  <li><strong>Border</strong>: A border surrounding the padding (if any) and content.</li>
+  <li><strong>Margin</strong>: Clears space outside the border.</li>
+</ul>
+<pre><code>div {
+  margin: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -80,10 +95,18 @@
           </h2>
           <div id="css-course-item3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>display: flex</p>
-              <pre><code>display: flex</code></pre>
-              <img src="https://picsum.photos/seed/css-course3/400/200" alt="Flexbox" class="example-img"/>
-            </div>
+<p>Flexbox makes it easier to design flexible and responsive layouts.</p>
+<ul>
+  <li><code>display: flex</code> enables flex container behavior.</li>
+  <li><code>justify-content</code> aligns items horizontally.</li>
+  <li><code>align-items</code> aligns items vertically.</li>
+</ul>
+<pre><code>nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -94,10 +117,17 @@
           </h2>
           <div id="css-course-item4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>display: grid</p>
-              <pre><code>display: grid</code></pre>
-              <img src="https://picsum.photos/seed/css-course4/400/200" alt="Grid Layout" class="example-img"/>
-            </div>
+<p>CSS Grid provides a two-dimensional layout system for web design.</p>
+<ul>
+  <li>Create rows and columns using <code>grid-template-rows</code> and <code>grid-template-columns</code>.</li>
+  <li>Place items using line numbers or named areas.</li>
+</ul>
+<pre><code>.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -108,10 +138,16 @@
           </h2>
           <div id="css-course-item5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>@media (max-width: 600px) { ... }</p>
-              <pre><code>@media (max-width: 600px) { ... }</code></pre>
-              <img src="https://picsum.photos/seed/css-course5/400/200" alt="Media Queries" class="example-img"/>
-            </div>
+<p>Media queries help make websites responsive across different devices.</p>
+<ul>
+  <li>They apply different styles based on screen size, orientation, and resolution.</li>
+</ul>
+<pre><code>@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -122,10 +158,20 @@
           </h2>
           <div id="css-course-item6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>static, relative, absolute, fixed, sticky</p>
-              <pre><code>static, relative, absolute, fixed, sticky</code></pre>
-              <img src="https://picsum.photos/seed/css-course6/400/200" alt="Positioning" class="example-img"/>
-            </div>
+<p>CSS positioning lets you control how elements are placed in the document flow.</p>
+<ul>
+  <li><code>static</code>: Default position.</li>
+  <li><code>relative</code>: Positioned relative to itself.</li>
+  <li><code>absolute</code>: Positioned relative to nearest positioned ancestor.</li>
+  <li><code>fixed</code>: Positioned relative to the viewport.</li>
+  <li><code>sticky</code>: Scrolls with the page, then sticks at a position.</li>
+</ul>
+<pre><code>.box {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -136,10 +182,12 @@
           </h2>
           <div id="css-course-item7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>Controls stacking order</p>
-              <pre><code>Controls stacking order</code></pre>
-              <img src="https://picsum.photos/seed/css-course7/400/200" alt="Z-index" class="example-img"/>
-            </div>
+<p>The <code>z-index</code> property controls the vertical stacking order of elements.</p>
+<pre><code>.modal {
+  position: absolute;
+  z-index: 1000;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -150,10 +198,19 @@
           </h2>
           <div id="css-course-item8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>:hover, :nth-child()</p>
-              <pre><code>:hover, :nth-child()</code></pre>
-              <img src="https://picsum.photos/seed/css-course8/400/200" alt="Pseudo-classes" class="example-img"/>
-            </div>
+<p>Pseudo-classes define special states of elements. Common ones include:</p>
+<ul>
+  <li><code>:hover</code> – when the mouse is over an element</li>
+  <li><code>:nth-child(n)</code> – selects the nth child</li>
+</ul>
+<pre><code>a:hover {
+  color: red;
+}
+
+li:nth-child(odd) {
+  background: #f0f0f0;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -164,10 +221,15 @@
           </h2>
           <div id="css-course-item9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>transition: all 0.3s ease;</p>
-              <pre><code>transition: all 0.3s ease;</code></pre>
-              <img src="https://picsum.photos/seed/css-course9/400/200" alt="Transitions" class="example-img"/>
-            </div>
+<p>Transitions enable smooth changes between property values over a given duration.</p>
+<pre><code>button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -178,10 +240,16 @@
           </h2>
           <div id="css-course-item10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#css-course-accordion">
             <div class="accordion-body">
-              <p>@keyframes slidein { ... }</p>
-              <pre><code>@keyframes slidein { ... }</code></pre>
-              <img src="https://picsum.photos/seed/css-course10/400/200" alt="Animations" class="example-img"/>
-            </div>
+<p>CSS animations allow elements to move or change style over time.</p>
+<pre><code>@keyframes slidein {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.element {
+  animation: slidein 0.5s ease-in-out;
+}</code></pre>
+</div>
           </div>
         </div>
     </div>

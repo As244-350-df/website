@@ -52,10 +52,10 @@
           </h2>
           <div id="javascript-course-item1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>let, const, var</p>
-              <pre><code>let, const, var</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course1/400/200" alt="Variables" class="example-img"/>
-            </div>
+<p>JavaScript variables are used to store data. Use <code>let</code> and <code>const</code> instead of <code>var</code>.</p>
+<pre><code>let name = "Alice";
+const age = 25;</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -66,10 +66,11 @@
           </h2>
           <div id="javascript-course-item2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>function greet() { alert('Hello'); }</p>
-              <pre><code>function greet() { alert('Hello'); }</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course2/400/200" alt="Functions" class="example-img"/>
-            </div>
+<p>Functions allow you to define reusable blocks of code.</p>
+<pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -80,10 +81,9 @@
           </h2>
           <div id="javascript-course-item3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>document.getElementById('id')</p>
-              <pre><code>document.getElementById('id')</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course3/400/200" alt="DOM Manipulation" class="example-img"/>
-            </div>
+<p>The DOM can be accessed and manipulated using JavaScript.</p>
+<pre><code>document.getElementById("demo").textContent = "Updated!";</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -94,10 +94,11 @@
           </h2>
           <div id="javascript-course-item4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>onclick, addEventListener()</p>
-              <pre><code>onclick, addEventListener()</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course4/400/200" alt="Events" class="example-img"/>
-            </div>
+<p>JavaScript events handle user interactions like clicks and keypresses.</p>
+<pre><code>button.addEventListener("click", () => {
+  alert("Clicked!");
+});</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -108,10 +109,10 @@
           </h2>
           <div id="javascript-course-item5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>[1, 2, 3].forEach() or for loop</p>
-              <pre><code>[1, 2, 3].forEach() or for loop</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course5/400/200" alt="Arrays & Loops" class="example-img"/>
-            </div>
+<p>Arrays store multiple values. Loops allow repeating actions.</p>
+<pre><code>const fruits = ["apple", "banana"];
+fruits.forEach(fruit => console.log(fruit));</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -122,10 +123,9 @@
           </h2>
           <div id="javascript-course-item6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>let obj = { key: 'value' }</p>
-              <pre><code>let obj = { key: 'value' }</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course6/400/200" alt="Objects" class="example-img"/>
-            </div>
+<p>Objects hold key-value pairs and are essential for structuring data.</p>
+<pre><code>const person = { name: "Alice", age: 25 };</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -136,10 +136,11 @@
           </h2>
           <div id="javascript-course-item7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>if, else, switch</p>
-              <pre><code>if, else, switch</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course7/400/200" alt="Conditionals" class="example-img"/>
-            </div>
+<p>Use <code>if</code>, <code>else</code>, and <code>switch</code> to execute code based on conditions.</p>
+<pre><code>if (x &gt; 10) {
+  console.log("Greater than 10");
+}</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -150,10 +151,9 @@
           </h2>
           <div id="javascript-course-item8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>() => {}</p>
-              <pre><code>() => {}</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course8/400/200" alt="Arrow Functions" class="example-img"/>
-            </div>
+<p>Arrow functions are a concise way to write functions.</p>
+<pre><code>const add = (a, b) => a + b;</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -164,10 +164,11 @@
           </h2>
           <div id="javascript-course-item9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>new Promise((resolve, reject) => {})</p>
-              <pre><code>new Promise((resolve, reject) => {})</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course9/400/200" alt="Promises" class="example-img"/>
-            </div>
+<p>Promises handle asynchronous operations in JavaScript.</p>
+<pre><code>fetch("data.json")
+  .then(res =&gt; res.json())
+  .then(data =&gt; console.log(data));</code></pre>
+</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -178,10 +179,9 @@
           </h2>
           <div id="javascript-course-item10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#javascript-course-accordion">
             <div class="accordion-body">
-              <p>fetch('url').then(response => response.json())</p>
-              <pre><code>fetch('url').then(response => response.json())</code></pre>
-              <img src="https://picsum.photos/seed/javascript-course10/400/200" alt="Fetch API" class="example-img"/>
-            </div>
+<p>The Fetch API allows making network requests.</p>
+<pre><code>fetch("/api").then(response =&gt; response.json());</code></pre>
+</div>
           </div>
         </div>
     </div>
